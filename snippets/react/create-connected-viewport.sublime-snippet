@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+import React from 'react';
+import {connect} from 'react-redux';
+import {withRouter} from "react-router";
+import {Switch, Route} from 'react-router-dom';
+import {Container} from '${1:../../}common';
+import ROUTES from '${1:../../}routes';
+
+const ${2:Viewport} = props => (
+    <Container layout="center">
+        ${3:Vista principal}
+    </Container>
+);
+
+const mapStateToProps = () => ({});
+
+const mapDispatchToProps = () => ({});
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(${2:Viewport}));
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>crcv</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
