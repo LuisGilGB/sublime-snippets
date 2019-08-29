@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 import React from 'react';
-import ${4:} from ${5:};
+import ${4:} from ${5:};${6:}
 
 const ${1:Comp} = props => {
     const {
@@ -10,10 +10,10 @@ const ${1:Comp} = props => {
     } = props;
 
     return (
-        <${3:Container}
+        <${3:div}
             {...otherProps}
-        >
-        </${3:Container}>
+        >${7:}
+        </${3:div}>
     );
 }
 
@@ -21,6 +21,7 @@ export default ${1:Comp};
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>crfc</tabTrigger>
+    <description>A template for a React functional component</description>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
 </snippet>
