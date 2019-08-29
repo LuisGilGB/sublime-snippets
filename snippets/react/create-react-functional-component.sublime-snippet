@@ -1,19 +1,19 @@
 <snippet>
     <content><![CDATA[
 import React from 'react';
-import ${4:} from ${5:};${6:}
+import ${2:} from ${3:};${4:}
 
 const ${1:Comp} = props => {
     const {
-        ${2:},
+        ${5:},
         ...otherProps
     } = props;
 
     return (
-        <${3:div}
+        <${6:div}
             {...otherProps}
         >${7:}
-        </${3:div}>
+        </${6:div}>
     );
 }
 
