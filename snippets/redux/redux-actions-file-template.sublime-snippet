@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+const actions = {
+    ${1:ACTION_NAME}: ${2:ACTION_PREFFIX}${1:ACTION_NAME}
+}
+
+export const actionCreators = {
+    ${3:actionName}; (${4:}) => ({
+        type: actions.${1:ACTION_NAME},
+        payload: {${4:}}
+    })
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rdxacftpl</tabTrigger>
+    <description>A template for a Redux actions file</description>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
+
