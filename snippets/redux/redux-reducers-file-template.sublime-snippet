@@ -16,7 +16,7 @@ const ${1:main}Reducers = (state = initialState, action) => {
         }
     }
 
-    return action && action.type && reducers[action.type] ? reducers[action.type] : state;
+    return action && action.type && reducers[action.type] ? reducers[action.type]() : state;
 }
 
 export default ${1:main}Reducers;
