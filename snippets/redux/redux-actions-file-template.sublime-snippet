@@ -5,7 +5,7 @@ const actions = {
 }
 
 export const actionCreators = {
-    ${3:actionName}; (${4:}) => ({
+    ${3:actionCreatorName}; (${4:}) => ({
         type: actions.${1:ACTION_NAME},
         payload: {${4:}}
     })
