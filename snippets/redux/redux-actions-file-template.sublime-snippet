@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 const actions = {
-    ${1:ACTION_NAME}: ${2:ACTION_PREFFIX}${1:ACTION_NAME}
+    ${1:ACTION_NAME}: ${2:ACTION_PREFFIX_}${1:ACTION_NAME}
 }
 
 export const actionCreators = {

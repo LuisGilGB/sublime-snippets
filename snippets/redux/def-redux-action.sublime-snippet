@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[${1:ACTION_NAME}: ${2:ACTION_PREFFIX}${1:ACTION_NAME}]]></content>
+    <content><![CDATA[${1:ACTION_NAME}: ${2:ACTION_PREFFIX_}${1:ACTION_NAME}]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>drdxaction</tabTrigger>
     <description>A template for a Redux action</description>
