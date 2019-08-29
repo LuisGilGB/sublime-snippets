@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[[actions.${1:ACTION_NAME}]: () =>{${2:}
+            return {
+                ...state,
+                ${3:data}: ${4:action.payload}
+            }
+        }]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>drdxcmplxreducer</tabTrigger>
+    <description>A template for a Redux complex reducer</description>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
