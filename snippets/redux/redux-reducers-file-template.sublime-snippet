@@ -8,12 +8,10 @@ export const initialState = {
 
 const ${1:main}Reducers = (state = initialState, action) => {
     const reducers = {
-        [actions.${4:ACTION_NAME}]() {
-            return {
-                ...state,
-                ${2:data}: ${5:action.payload}
-            }
-        }
+        [actions.${4:ACTION_NAME}]: () => ({
+            ...state,
+            ${2:data}: ${5:action.payload}
+        })
     }
 
     return action && action.type && reducers[action.type] ? reducers[action.type]() : state;
