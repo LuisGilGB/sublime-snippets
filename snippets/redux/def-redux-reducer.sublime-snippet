@@ -1,8 +1,9 @@
 <snippet>
-    <content><![CDATA[[actions.${1:ACTION_NAME}]: () => ({
-            ...state,
-            ${2:data}: ${3:action.payload}
-        })]]></content>
+    <content><![CDATA[[
+actions.${1:ACTION_NAME}]: () => ({
+    ...state,
+    ${2:data}: ${3:action.payload}
+})]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>drdxreducer</tabTrigger>
     <description>A template for a Redux reducer</description>

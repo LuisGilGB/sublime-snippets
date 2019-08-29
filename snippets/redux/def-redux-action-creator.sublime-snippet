@@ -1,8 +1,9 @@
 <snippet>
-    <content><![CDATA[${1:actionCreatorName}; (${3:}) => ({
-        type: actions.${2:ACTION_NAME},
-        payload: {${3:}}
-    })]]></content>
+    <content><![CDATA[
+${1:actionCreatorName}; (${3:}) => ({
+    type: actions.${2:ACTION_NAME},
+    payload: {${3:}}
+})]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>drdxaccreator</tabTrigger>
     <description>A template for a Redux action creator</description>
