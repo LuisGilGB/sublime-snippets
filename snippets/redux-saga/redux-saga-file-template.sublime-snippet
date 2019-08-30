@@ -1,0 +1,32 @@
+<snippet>
+    <content><![CDATA[
+import {call, ${2:all, }put, ${3:takeEvery, }takeLatest} from 'redux-saga/effects';
+import ${4:axios} from '${4:axios}';
+import {actions, actionCreators} from './${1:main}Actions';
+
+const do${5:LoadMain} = () => ${4:axios}.get('/bff/${1:main}');
+
+function* ${6:loadMain} (opts) {
+    try {
+        const { data } = yield call(do${5:LoadMain});
+
+        yield put(actionCreators.${6:loadMain}Done(data));
+    }
+    catch (err) {
+        console.log(err);
+        yield put(actionCreators.${6:loadMain}Failed());
+    }
+}
+
+const ${1:main}Sagas = [
+    takeLatest(actions.${7:LOAD_ACTION}, ${6:loadMain})
+];
+
+export default ${1:main}Sagas;
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rdxsgftpl</tabTrigger>
+    <description>A template for a Redux sagas file with axios</description>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
