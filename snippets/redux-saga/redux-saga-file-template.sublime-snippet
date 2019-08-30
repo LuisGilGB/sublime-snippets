@@ -19,7 +19,7 @@ function* load${5:Main} (opts) {
 }
 
 const ${1:main}Sagas = [
-    takeLatest(actions.${6:LOAD_ACTION}, load${5:Main})
+    takeLatest(actions.LOAD_${6:ACTION}, load${5:Main})
 ];
 
 export default ${1:main}Sagas;
