@@ -21,55 +21,55 @@ const arrayObjectsExpects = ${17:false};
 const objectExpects = ${18:false};
 const functionExpects = ${19:false};
 
-it(`Undefined returns ${undefinedExpects}`, () => {
+it(`Undefined returns \${undefinedExpects}`, () => {
     assert.equal(${1:function}(undefined), undefinedExpects);
 });
-it(`Null returns ${nullExpects}`, () => {
+it(`Null returns \${nullExpects}`, () => {
     assert.equal(${1:function}(null), nullExpects);
 });
-it(`False returns ${falseExpects}`, () => {
+it(`False returns \${falseExpects}`, () => {
     assert.equal(${1:function}(false), falseExpects);
 });
-it(`True returns ${trueExpects}`, () => {
+it(`True returns \${trueExpects}`, () => {
     assert.equal(${1:function}(true), trueExpects);
 });
-it(`Empty string returns ${emptyStringExpects}`, () => {
+it(`Empty string returns \${emptyStringExpects}`, () => {
     assert.equal(${1:function}(''), emptyStringExpects);
 });
-it(`0 returns ${zeroExpects}`, () => {
+it(`0 returns \${zeroExpects}`, () => {
     assert.equal(${1:function}(0), zeroExpects);
 });
-it(`NaN returns ${nanExpects}`, () => {
+it(`NaN returns \${nanExpects}`, () => {
     assert.equal(${1:function}(NaN), nanExpects);
 });
-it(`Infinity returns ${infinityExpects}`, () => {
+it(`Infinity returns \${infinityExpects}`, () => {
     assert.equal(${1:function}(Infinity), infinityExpects);
 });
-it(`Empty array returns ${emptyArrayExpects}`, () => {
+it(`Empty array returns \${emptyArrayExpects}`, () => {
     assert.equal(${1:function}([]), emptyArrayExpects);
 });
-it(`Empty object returns ${emptyObjectExpects}`, () => {
+it(`Empty object returns \${emptyObjectExpects}`, () => {
     assert.equal(${1:function}({}), emptyObjectExpects);
 });
-it(`Arbitrary string returns ${stringExpects}`, () => {
+it(`Arbitrary string returns \${stringExpects}`, () => {
     assert.equal(${1:function}('Arbitrary'), stringExpects);
 });
-it(`Arbitrary number returns ${numberExpects}`, () => {
+it(`Arbitrary number returns \${numberExpects}`, () => {
     assert.equal(${1:function}(1234), numberExpects);
 });
-it(`Array of numbers returns ${arrayNumbersExpects}`, () => {
+it(`Array of numbers returns \${arrayNumbersExpects}`, () => {
     assert.equal(${1:function}([1,2,3]), arrayNumbersExpects);
 });
-it(`Array of strings returns ${arrayStringsExpects}`, () => {
+it(`Array of strings returns \${arrayStringsExpects}`, () => {
     assert.equal(${1:function}(['a','b','c']), arrayStringsExpects);
 });
-it(`Array of objects returns ${arrayObjectsExpects}`, () => {
+it(`Array of objects returns \${arrayObjectsExpects}`, () => {
     assert.equal(${1:function}([{v:1},{v:2},{v:3}]), arrayObjectsExpects);
 });
-it(`Arbitrary object returns ${objectExpects}`, () => {
+it(`Arbitrary object returns \${objectExpects}`, () => {
     assert.equal(${1:function}({a:1,b:2,c:3}), objectExpects);
 });
-it(`Arbitrary function returns ${functionExpects}`, () => {
+it(`Arbitrary function returns \${functionExpects}`, () => {
     assert.equal(${1:function}(() => 'I am a function'), functionExpects);
 });
 ]]></content>
