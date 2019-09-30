@@ -19,6 +19,7 @@ const arrayNumbersExpects = ${15:false};
 const arrayStringsExpects = ${16:false};
 const arrayObjectsExpects = ${17:false};
 const objectExpects = ${18:false};
+const functionExpects = ${19:false};
 
 it(`Undefined returns ${undefinedExpects}`, () => {
     assert.equal(${1:function}(undefined), undefinedExpects);
@@ -67,6 +68,9 @@ it(`Array of objects returns ${arrayObjectsExpects}`, () => {
 });
 it(`Arbitrary object returns ${objectExpects}`, () => {
     assert.equal(${1:function}({a:1,b:2,c:3}), objectExpects);
+});
+it(`Arbitrary function returns ${functionExpects}`, () => {
+    assert.equal(${1:function}(() => 'I am a function'), functionExpects);
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
