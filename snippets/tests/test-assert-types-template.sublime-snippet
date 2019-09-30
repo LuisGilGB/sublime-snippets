@@ -1,0 +1,77 @@
+<snippet>
+    <content><![CDATA[
+const assert = require('assert');
+const {${1:function}} = require('${2:../../}index');
+
+const undefinedExpects = ${3:false};
+const nullExpects = ${4:false};
+const falseExpects = ${5:false};
+const trueExpects = ${6:false};
+const emptyStringExpects = ${7:false};
+const zeroExpects = ${8:false};
+const nanExpects = ${9:false};
+const infinityExpects = ${10:false};
+const emptyArrayExpects = ${11:false};
+const emptyObjectExpects = ${12:false};
+const stringExpects = ${13:false};
+const numberExpects = ${14:false};
+const arrayNumbersExpects = ${15:false};
+const arrayStringsExpects = ${16:false};
+const arrayObjectsExpects = ${17:false};
+const objectExpects = ${18:false};
+
+it(`Undefined returns ${undefinedExpects}`, () => {
+    assert.equal(${1:function}(undefined), undefinedExpects);
+});
+it(`Null returns ${nullExpects}`, () => {
+    assert.equal(${1:function}(null), nullExpects);
+});
+it(`False returns ${falseExpects}`, () => {
+    assert.equal(${1:function}(false), falseExpects);
+});
+it(`True returns ${trueExpects}`, () => {
+    assert.equal(${1:function}(true), trueExpects);
+});
+it(`Empty string returns ${emptyStringExpects}`, () => {
+    assert.equal(${1:function}(''), emptyStringExpects);
+});
+it(`0 returns ${zeroExpects}`, () => {
+    assert.equal(${1:function}(0), zeroExpects);
+});
+it(`NaN returns ${nanExpects}`, () => {
+    assert.equal(${1:function}(NaN), nanExpects);
+});
+it(`Infinity returns ${infinityExpects}`, () => {
+    assert.equal(${1:function}(Infinity), infinityExpects);
+});
+it(`Empty array returns ${emptyArrayExpects}`, () => {
+    assert.equal(${1:function}([]), emptyArrayExpects);
+});
+it(`Empty object returns ${emptyObjectExpects}`, () => {
+    assert.equal(${1:function}({}), emptyObjectExpects);
+});
+it(`Arbitrary string returns ${stringExpects}`, () => {
+    assert.equal(${1:function}('Arbitrary'), stringExpects);
+});
+it(`Arbitrary number returns ${numberExpects}`, () => {
+    assert.equal(${1:function}(1234), numberExpects);
+});
+it(`Array of numbers returns ${arrayNumbersExpects}`, () => {
+    assert.equal(${1:function}([1,2,3]), arrayNumbersExpects);
+});
+it(`Array of strings returns ${arrayStringsExpects}`, () => {
+    assert.equal(${1:function}(['a','b','c']), arrayStringsExpects);
+});
+it(`Array of objects returns ${arrayObjectsExpects}`, () => {
+    assert.equal(${1:function}([{v:1},{v:2},{v:3}]), arrayObjectsExpects);
+});
+it(`Arbitrary object returns ${objectExpects}`, () => {
+    assert.equal(${1:function}({a:1,b:2,c:3}), objectExpects);
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>tsttypetpl</tabTrigger>
+    <description>A template for a testing file focused on assertion with types</description>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
